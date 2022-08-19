@@ -10,13 +10,13 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div id="div" class="container">
       <h2 onclick="alert(Status(BMI(80, 1.8)))">!اضغط علي</h2>
       <section>
         <input id="weight" type="number" placeholder="الوزن بالكيلوجرام" />
         <input id="height" type="number" placeholder="الطول بالمتر" />
         <div id="result"></div>
-        <button onclick="calculate()">احسب</button>
+        <button id="button" onmouseover="calculate()">احسب</button>
       </section>
     </div>
   </body>

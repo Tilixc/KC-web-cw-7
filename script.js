@@ -1,4 +1,4 @@
-function BMI (weight, height) {
+function BMI (weight = 80.1, height = 5.7) {
 
     let result = weight / (height * height)
 
@@ -8,13 +8,18 @@ function BMI (weight, height) {
 
 console.log(BMI(10,17))
 
+console.log(BMI())
+
 function Status(bmi){
  if ( bmi <18.5 ) {
-    return `%cتقص بالوزن`
+    document.getElementById('div').style.color='red';
+    return `تقص بالوزن`
  } else if (bmi >= 18.5 && bmi > 25 ) {
-    return`%cوزنك صحي `, `color : green`
+    document.getElementById('div').style.color='green';
+    return`وزنك صحي `
  } else if(bmi >= 25){
-    return`%cلديك زيادة بالوزن `, `color:orangr`
+    document.getElementById('div').style.color='orangr';
+    return`لديك زيادة بالوزن `
  }
 }
 
